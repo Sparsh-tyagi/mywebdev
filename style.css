@@ -1,0 +1,117 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+color:white;
+transition:0.3s;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 40px;
+background:rgba(255,255,255,0.05);
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:20px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+}
+
+.hero{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.btn{
+margin-top:20px;
+padding:10px 20px;
+border:none;
+border-radius:25px;
+background:#00ffd5;
+cursor:pointer;
+}
+
+.section{
+padding:80px 10%;
+}
+
+.cards{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.card{
+background:rgba(255,255,255,0.08);
+padding:20px;
+border-radius:15px;
+flex:1;
+min-width:200px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.skills span{
+background:rgba(255,255,255,0.1);
+padding:10px 15px;
+margin:5px;
+display:inline-block;
+border-radius:20px;
+}
+
+/* DARK MODE */
+
+.dark{
+background:white;
+color:black;
+}
+.highlight{
+color:#00ffd5;
+}
+
+.hero{
+position:relative;
+overflow:hidden;
+}
+
+.hero-shape{
+position:absolute;
+width:300px;
+height:300px;
+background:#00ffd5;
+border-radius:50%;
+filter:blur(120px);
+top:20%;
+left:40%;
+z-index:-1;
+transition:0.2s;
+}
+
+/* Button hover */
+
+.btn:hover{
+transform:scale(1.05);
+}
